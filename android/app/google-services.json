@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "788059271399",
+    "firebase_url": "https://indian-cricket-league-default-rtdb.firebaseio.com",
+    "project_id": "indian-cricket-league",
+    "storage_bucket": "indian-cricket-league.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788059271399:android:41c029a6c055146fdd3242",
+        "android_client_info": {
+          "package_name": "com.example.indian_cricket_league"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788059271399-rgvpkl41hg1nnve5dqi7pbli84t5lsnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.indian_cricket_league",
+            "certificate_hash": "cb4a6023cf9783b9f60f5031c3154efd2ba2475e"
+          }
+        },
+        {
+          "client_id": "788059271399-lqkm69it5c1fsfib5fo9cootc48kf9p5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7uno7sTNj_A2TVVH0pPHJ9gKHrzaQup8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788059271399-lqkm69it5c1fsfib5fo9cootc48kf9p5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "788059271399-6iqb092c3cnainn1onsatb9vpimgtt27.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.indianCricketLeague"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
