@@ -14,7 +14,7 @@ class SignUpFormPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Provider<SignUpFormPageBloc>(
       create: (_) => SignUpFormPageBloc(
-        signInServices: provideSignInServices(),
+        signInRepository: provideSignInRepository(),
       ),
       dispose: (_, bloc) => bloc.dispose(),
       child: _Body(),

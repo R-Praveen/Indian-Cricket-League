@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Provider<LoginPageBloc>(
       create: (_) => LoginPageBloc(
-        signInServices: provideSignInServices(),
+        signInRepository: provideSignInRepository(),
       ),
       dispose: (_, bloc) => bloc.dispose,
       child: _Body(),

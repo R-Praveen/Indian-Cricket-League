@@ -1,4 +1,5 @@
 import 'package:indian_cricket_league/helpers/validators.dart';
+import 'package:indian_cricket_league/repository/sign_in_repository.dart';
 import 'package:indian_cricket_league/services/sign_in_services.dart';
 import 'package:rxdart/subjects.dart';
 
@@ -12,10 +13,10 @@ class SignUpFormPageBloc {
   final emailError = BehaviorSubject<String?>();
   final passwordError = BehaviorSubject<String?>();
   final confirmPasswordError = BehaviorSubject<String?>();
-  final SignInServices signInServices;
+  final SignInRepository signInRepository;
 
   SignUpFormPageBloc({
-    required this.signInServices,
+    required this.signInRepository,
   });
 
   void onChangedEmail(String? value) {
@@ -71,7 +72,7 @@ class SignUpFormPageBloc {
       "password": password.valueWrapper!.value
     };
     try {
-      final userCredential = await signInServices.createUser(userData);
+      final userCredential = await signInRepository.createUser(userData);
       if (userCredential != null) {
         showMessage.add("User created successfully. Please login");
       }
